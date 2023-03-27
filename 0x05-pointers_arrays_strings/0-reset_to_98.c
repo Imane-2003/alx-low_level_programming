@@ -1,27 +1,16 @@
-include "main.h"
+#include "main.h"
 
 /**
- * _strcat - function with two argument
- * @dest: char type pointer 1st argument
- * @src: char type pointer 2nd argument
- *
- * Description: concatenates two strings
- * Return: na
+ * swap_int - swaps the values of two integers
+ * @a: pointer 1
+ * @b: pointer 2
+ * Return: void
  */
-char _strcat(char *dest, char *src)
-{
-	char *start = dest;
 
-	while (*dest != '\0')
-	{
-		dest++;
-	}
-	while (*src != '\0')
-	{
-		*dest = *src;
-		dest++;
-		src++;
-	}
-	*dest = '\0';
-	return (start);
+void swap_int(int *a, int *b)
+{
+	int x = *a;
+	*a = *b;
+	*b = x;
 }
+
