@@ -8,7 +8,7 @@ include "main.h"
  * Description: concatenates two strings
  * Return: na
  */
-char *_strcat(char *dest, char *src)
+char _strcat(char *dest, char *src)
 {
 	char *start = dest;
 
